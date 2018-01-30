@@ -14,10 +14,12 @@ import org.springframework.stereotype.Service;
     private ChuckNorrisQuotes chuckNorrisQuotes;
 
     /**
-     * Creates a new JokeService object.
+     * Creates a new JokeServiceImpl object.
+     *
+     * @param  chuckNorrisQuotes
      */
-    public JokeServiceImpl() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public JokeServiceImpl(final ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
 
     /**
