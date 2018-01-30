@@ -2,7 +2,6 @@ package com.springframeworkguru.jokeapp.config;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 
@@ -23,7 +22,8 @@ import org.springframework.context.annotation.Configuration;
      *
      * @return  ChuckNorrisQuotes
      */
-    @Bean public ChuckNorrisQuotes chuckNorrisQuotes() {
+    // @Bean
+    public ChuckNorrisQuotes chuckNorrisQuotes() {
         return new ChuckNorrisQuotes();
     }
 }
